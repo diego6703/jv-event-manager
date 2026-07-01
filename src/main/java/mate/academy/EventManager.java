@@ -9,7 +9,7 @@ public class EventManager {
     private final ExecutorService executor = Executors.newCachedThreadPool();
 
     public void registerListener(EventListener listener) {
-        listeners.addIfAbsent(listener); 
+        listeners.addIfAbsent(listener);
     }
 
     public void deregisterListener(EventListener listener) {
